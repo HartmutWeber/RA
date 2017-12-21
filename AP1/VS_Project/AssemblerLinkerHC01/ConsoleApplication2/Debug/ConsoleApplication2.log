@@ -1,0 +1,111 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (ConsoleApplication2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\main.cpp(91): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: Siehe Deklaration von "scanf"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\main.cpp(106): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: Siehe Deklaration von "fopen"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\main.cpp(115): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: Siehe Deklaration von "fopen"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\main.cpp(20): warning C4101: "quell_datei": Unreferenzierte lokale Variable
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\main.cpp(16): warning C4101: "dest_file": Unreferenzierte lokale Variable
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\main.cpp(15): warning C4101: "source_file": Unreferenzierte lokale Variable
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\main.cpp(21): warning C4101: "ziel_datei": Unreferenzierte lokale Variable
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\main.cpp(29): warning C4101: "table": Unreferenzierte lokale Variable
+  linker_functions.cpp
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(39): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: Siehe Deklaration von "fopen"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(122): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(127): warning C4996: 'strncat': This function or variable may be unsafe. Consider using strncat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(255): note: Siehe Deklaration von "strncat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(139): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(175): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(178): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(212): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(213): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(214): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(215): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(225): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(346): note: Siehe Deklaration von "strncpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(229): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(230): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(231): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: Siehe Deklaration von "fopen"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(245): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(247): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(248): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(249): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(252): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(254): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(255): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(256): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(259): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(261): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(262): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(263): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(266): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(268): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(269): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(270): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(273): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(275): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(276): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\linker_functions.cpp(277): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+  assembler.cpp
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(111): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(114): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(140): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(142): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(145): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(197): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(1316): note: Siehe Deklaration von "itoa"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(198): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(199): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(200): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(1316): note: Siehe Deklaration von "itoa"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(201): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(203): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: Siehe Deklaration von "strcpy"
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(27): warning C4101: "temp3": Unreferenzierte lokale Variable
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(27): warning C4101: "zeiger": Unreferenzierte lokale Variable
+c:\users\michael jatiani\downloads\consoleapplication2\consoleapplication2\consoleapplication2\assembler.cpp(235): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: Siehe Deklaration von "strcat"
+  Code wird generiert...
+  ConsoleApplication2.vcxproj -> C:\Users\Michael Jatiani\Downloads\ConsoleApplication2\ConsoleApplication2\Debug\AssemblerLinker.exe

@@ -1,0 +1,18 @@
+Projektverlauf
+****************************************************************************************************************************
+
+Aufgabe: Quellecode des Assemblers und Linkers verstehen und evenutell verbessern.
+
+*****************************************************************************************************************************
+Bericht:
+Verstehen des Quellecodes war eigentlich kein Problem, aber der Linker war gar nicht lauffähig und der Assembler nur bedingt.
+Also haben wir den Assembler umgeschrieben und so konfiguriert wie wir in gebraucht haben. Hierbei ist viel Zeit 
+vergangen, weil unter anderem das Programm (Notepad++) um die fertigen Datein zuprüfen nicht alles angezeigt hat und wir 
+somit dachten wir haben noch einen Fehler im Assembler. Somit hat die Zeit nicht mehr für den Linker gereicht.
+
+*****************************************************************************************************************************
+
+Funktionsweise:
+Der Assembler kann Datein einlesen und versteht den Befehlssatz des HC1 und übersetzt diesen in Binärdateien.
+Sprungbefehle funktionieren nur mit der Adresse und nicht mit Labels.
+Labels sind allgemein erlaubt.

@@ -1,0 +1,3 @@
+lab3:	ADD A,00011
+		SUB A,11101
+lab4:	NAND A,11001

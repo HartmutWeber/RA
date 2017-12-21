@@ -1,0 +1,32 @@
+IN      			; zeile:2
+STORE   0x1f		; zeile:2        char a = in()
+OUT     			; zeile:3        out(a)
+IN      			; zeile:4        out(in())
+OUT     			; zeile:4        out(in())
+JMP     0x05		; halt (empty)
+JMP     0x06		; halt (empty)
+JMP     0x07		; halt (empty)    Auch hier wird wieder das LOAD a weg-
+JMP     0x08		; halt (empty)    optimiert, da vorher schon a im acc
+JMP     0x09		; halt (empty)    steht
+JMP     0x0a		; halt (empty)
+JMP     0x0b		; halt (empty)
+JMP     0x0c		; halt (empty)
+JMP     0x0d		; halt (empty)
+JMP     0x0e		; halt (empty)
+JMP     0x0f		; halt (empty)
+JMP     0x10		; halt (empty)
+JMP     0x11		; halt (empty)
+JMP     0x12		; halt (empty)
+JMP     0x13		; halt (empty)
+JMP     0x14		; halt (empty)
+JMP     0x15		; halt (empty)
+JMP     0x16		; halt (empty)
+JMP     0x17		; halt (empty)
+JMP     0x18		; halt (empty)
+JMP     0x19		; halt (empty)
+JMP     0x1a		; halt (empty)
+JMP     0x1b		; halt (empty)
+JMP     0x1c		; halt (empty)
+JMP     0x1d		; halt (empty)
+JMP     0x1e		; halt (empty)
+DATA    0x00		; a
