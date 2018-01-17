@@ -31,6 +31,13 @@ entity cpu is
 end cpu;
 
 architecture rtl of cpu is
+
+Component immgen is PORT(
+immgenIn: IN std_logic_vector(11 downto 0);
+immgenOut: OUT std_logic_vector(15 downto 0)
+);
+end Component;
+
     -- Data Wires
     signal address : std_logic_vector(15 downto 0);       -- PC to MEM
     signal memOut : std_logic_vector(15 downto 0);        -- MEM to IR, ALU & ACC
@@ -38,7 +45,7 @@ architecture rtl of cpu is
     signal opCode : std_logic_vector(3 downto 0);        -- IR to CTRL
     signal irOut  : std_logic_vector(11 downto 0);        -- IR to CTRL & PC
     signal aluOut : std_logic_vector(15 downto 0);        -- ALU to ACC
-
+	 signal immgenOut: std_logic_vector(15 downto 0);      --Immgen to Alu
     -- Control Wires
     signal pcSel  : std_logic_vector(1 downto 0);        -- PC input address selection
     signal pcLoad : std_logic;                           -- PC enable
@@ -50,7 +57,7 @@ architecture rtl of cpu is
     signal accLoad  : std_logic;                         -- ACC enable
     signal posFlag  : std_logic;                         -- ACC data is positive flag
     signal zeroFlag : std_logic;                         -- ACC data is zero flag
-
+	 signal immgenCtrl: std_logic;                        --Ctrl to alu
     signal aluOp : std_logic_vector(2 downto 0);         -- ALU operation selection
     signal memWrite : std_logic;                         -- MEM write enable
     signal outputEnable : std_logic;                     -- LED output enable
@@ -63,9 +70,10 @@ begin
     --
     CTRL : control_unit port map(clk, reset, inEnter, posFlag, zeroFlag ,legacySel, opCode,
                                  irOut, pcSel, pcLoad, adrSel, irLoad, accSel,
-                                 accLoad, aluOp, memWrite, outputEnable, ledWait);											
+                                 accLoad, aluOp, immgenCtrl, memWrite, outputEnable, ledWait);											
     MEM  : memory_unit port map(clk, reset, memWrite, address, accOut, memOut);
-    ALU  : arithmetic_logic_unit port map(aluOp, memOut, accOut, aluOut);
+    ALU  : arithmetic_logic_unit port map(aluOp, memOut, accOut, immgenOut, immgenCtrl, aluOut);
+	 IGN  : immgen port map(irOut, immgenOut);
     ACC  : accumulator port map(clk, accLoad, accSel, keyIn, memOut, aluOut,
                                 accOut, posFlag, zeroFlag);
     IR   : instruction_register port map(clk, irLoad, memOut, opCode, irOut,legacySel);

@@ -14,7 +14,7 @@ use ieee.numeric_std.all;
 
 entity clock_divider is
   generic (
-    InputFreq  : integer := 50000000;
+    InputFreq  : integer := 5000000;
     OutputFreq : integer := 5
   );
   port (

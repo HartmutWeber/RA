@@ -39,6 +39,9 @@ entity control_unit is
 
         -- Arithmetic Logic Unit Output  --
         aluOp        : out std_logic_vector(2 downto 0);
+		  
+		  --Immediate Generator Output--
+		  immgenCtrl   : out std_logic;
 
         -- Memory Output  --
         memWrite     : out std_logic;
@@ -72,7 +75,13 @@ architecture rtl of control_unit is
         ACC_ALU_ADD,                    -- Acc load ALU with ALU-Add Operation
         ACC_ALU_SUB,                    -- Acc load ALU with ALU-Sub Operation
         ACC_ALU_NAND,                   -- Acc load ALU with ALU-Nand Operation
-
+		  
+		  ACC_ALU_DIV,							 -- Acc load ALU with ALU-Div Operation
+		  ACC_ALU_MUL,							 -- Acc load ALU with ALU-Mul Operation
+		  
+		  ACC_ALU_ADDI,						 -- Acc load ALU with ALU-AddI Operation
+		  ACC_ALU_SUBI,						 -- Acc load ALU with ALU-SubI Operation
+		  
         ACC_inEnter,                    -- Acc load key_in when inEnter is set
 
         JUMP_PC_MEM,                    -- PC Jump to Address in Memory
@@ -186,6 +195,14 @@ begin
                         else
                             nextState <= NOP_PC;
                         end if;
+						  when "1010" =>     --DIV
+									 nextState <= ACC_ALU_DIV;
+						  when "1011" =>     --MUL
+									 nextState<=ACC_ALU_MUL;
+						  when "1100" =>     --DIV
+									 nextState <= ACC_ALU_ADDI;
+						  when "1101" =>     --MUL
+									 nextState<=ACC_ALU_SUBI;			 
                     when others =>      -- JUMP ALWAYS
                         nextState <= JUMP_PC_MEM;
                 end case;	
@@ -231,6 +248,8 @@ begin
                 accLoad      <= '0';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
@@ -249,6 +268,8 @@ begin
                 accLoad      <= '0';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
@@ -267,6 +288,8 @@ begin
                 accLoad      <= '0';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '1';
                 -- GEN
@@ -285,6 +308,8 @@ begin
                 accLoad      <= '1';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
@@ -303,6 +328,8 @@ begin
                 accLoad      <= '1';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
@@ -321,6 +348,8 @@ begin
                 accLoad      <= '1';
                 -- ALU
                 aluOp        <= "001";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
@@ -339,6 +368,8 @@ begin
                 accLoad      <= '1';
                 -- ALU
                 aluOp        <= "010";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
@@ -357,6 +388,8 @@ begin
                 accLoad      <= '1';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
@@ -375,6 +408,8 @@ begin
                 accLoad      <= '0';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
@@ -393,6 +428,8 @@ begin
                 accLoad      <= '0';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
@@ -411,6 +448,8 @@ begin
                 accLoad      <= '0';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
@@ -430,12 +469,94 @@ begin
                 accLoad      <= '0';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
                 outputEnable <= '0';
                 ledWait      <= '0';
-
+					 
+            when ACC_ALU_DIV =>         -- Acc load ALU with ALU-Div Operation
+                -- PC
+                pcSel        <= "00";
+                pcLoad       <= '0';
+                adrSel       <= '0';
+                -- IR
+                irLoad       <= '0';
+                -- ACC
+                accSel       <= "000";
+                accLoad      <= '1';
+                -- ALU
+                aluOp        <= "011";
+					 --IMMGEN
+					 immgenCtrl   <='0';
+                -- MEM
+                memWrite     <= '0';
+                -- GEN
+                outputEnable <= '0';
+                ledWait      <= '0';
+					 
+            when ACC_ALU_MUL =>         -- Acc load ALU with ALU-Mul Operation
+                -- PC
+                pcSel        <= "00";
+                pcLoad       <= '0';
+                adrSel       <= '0';
+                -- IR
+                irLoad       <= '0';
+                -- ACC
+                accSel       <= "000";
+                accLoad      <= '1';
+                -- ALU
+                aluOp        <= "100";
+					 --IMMGEN
+					 immgenCtrl   <='0';
+                -- MEM
+                memWrite     <= '0';
+                -- GEN
+                outputEnable <= '0';
+                ledWait      <= '0';
+					 
+            when ACC_ALU_ADDI =>         -- Acc load ALU with ALU-AddI Operation
+                -- PC
+                pcSel        <= "00";
+                pcLoad       <= '0';
+                adrSel       <= '0';
+                -- IR
+                irLoad       <= '0';
+                -- ACC
+                accSel       <= "000";
+                accLoad      <= '1';
+                -- ALU
+                aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='1';
+                -- MEM
+                memWrite     <= '0';
+                -- GEN
+                outputEnable <= '0';
+                ledWait      <= '0';
+					 
+				when ACC_ALU_SUBI =>         -- Acc load ALU with ALU-SubI Operation
+                -- PC
+                pcSel        <= "00";
+                pcLoad       <= '0';
+                adrSel       <= '0';
+                -- IR
+                irLoad       <= '0';
+                -- ACC
+                accSel       <= "000";
+                accLoad      <= '1';
+                -- ALU
+                aluOp        <= "001";
+					 --IMMGEN
+					 immgenCtrl   <='1';
+                -- MEM
+                memWrite     <= '0';
+                -- GEN
+                outputEnable <= '0';
+                ledWait      <= '0';
+					 
             when others =>              -- Update IR (NOP_IR)
                 -- PC
                 pcSel        <= "00";
@@ -448,6 +569,8 @@ begin
                 accLoad      <= '0';
                 -- ALU
                 aluOp        <= "000";
+					 --IMMGEN
+					 immgenCtrl   <='0';
                 -- MEM
                 memWrite     <= '0';
                 -- GEN
