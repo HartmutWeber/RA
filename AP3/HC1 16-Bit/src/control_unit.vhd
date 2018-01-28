@@ -82,6 +82,8 @@ architecture rtl of control_unit is
 		  ACC_ALU_ADDI,						 -- Acc load ALU with ALU-AddI Operation
 		  ACC_ALU_SUBI,						 -- Acc load ALU with ALU-SubI Operation
 		  
+		  ACC_ALU_MOD,							 -- Acc load ALU with ALU-Mod Operation
+		  
         ACC_inEnter,                    -- Acc load key_in when inEnter is set
 
         JUMP_PC_MEM,                    -- PC Jump to Address in Memory
@@ -202,7 +204,9 @@ begin
 						  when "1100" =>     --DIV
 									 nextState <= ACC_ALU_ADDI;
 						  when "1101" =>     --MUL
-									 nextState<=ACC_ALU_SUBI;			 
+									 nextState<=ACC_ALU_SUBI;
+						 when "1110" =>     --MOD
+									 nextState<=ACC_ALU_MOD;			 
                     when others =>      -- JUMP ALWAYS
                         nextState <= JUMP_PC_MEM;
                 end case;	
@@ -557,6 +561,25 @@ begin
                 outputEnable <= '0';
                 ledWait      <= '0';
 					 
+				when ACC_ALU_MOD =>         -- Acc load ALU with ALU-Mod Operation
+                -- PC
+                pcSel        <= "00";
+                pcLoad       <= '0';
+                adrSel       <= '0';
+                -- IR
+                irLoad       <= '0';
+                -- ACC
+                accSel       <= "000";
+                accLoad      <= '1';
+                -- ALU
+                aluOp        <= "101";
+					 --IMMGEN
+					 immgenCtrl   <='0';
+                -- MEM
+                memWrite     <= '0';
+                -- GEN
+                outputEnable <= '0';
+                ledWait      <= '0';	 
             when others =>              -- Update IR (NOP_IR)
                 -- PC
                 pcSel        <= "00";

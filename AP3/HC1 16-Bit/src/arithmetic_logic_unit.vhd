@@ -43,6 +43,7 @@ begin
 		  std_logic_vector(signed(accOut) / signed(aluIn)) when "011",	 -- DIV
 		  std_logic_vector(signed(accOut(7 downto 0)) * signed(aluIn(7 downto 0))) when "100",	 -- MUL
         not (memOut and accOut) when "010",                              -- NAND
-            "0000000000000000" when others;                                     -- Not used operation
+        std_logic_vector((signed(accOut)) mod (signed(aluIn))) when "101",	 -- MOD
+		  "0000000000000000" when others;                                     -- Not used operation
 
 end;

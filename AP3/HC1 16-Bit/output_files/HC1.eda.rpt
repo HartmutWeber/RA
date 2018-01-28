@@ -1,6 +1,6 @@
 EDA Netlist Writer report for HC1
-Wed Jan 17 16:09:16 2018
-Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Wed Jan 24 16:07:41 2018
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Jan 17 16:09:16 2018 ;
+; EDA Netlist Writer Status ; Successful - Wed Jan 24 16:07:40 2018 ;
 ; Revision Name             ; HC1                                   ;
 ; Top-level Entity Name     ; HC1                                   ;
 ; Family                    ; Cyclone II                            ;
@@ -66,31 +66,31 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-------------------------------------------------------+
-; Simulation Generated Files                            ;
-+-------------------------------------------------------+
-; Generated Files                                       ;
-+-------------------------------------------------------+
-; D:/RA/HC1 16-Bit/simulation/modelsim/HC1.vho          ;
-; D:/RA/HC1 16-Bit/simulation/modelsim/HC1_fast.vho     ;
-; D:/RA/HC1 16-Bit/simulation/modelsim/HC1_vhd.sdo      ;
-; D:/RA/HC1 16-Bit/simulation/modelsim/HC1_vhd_fast.sdo ;
-+-------------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Simulation Generated Files                                                     ;
++--------------------------------------------------------------------------------+
+; Generated Files                                                                ;
++--------------------------------------------------------------------------------+
+; /tmp/guest-E6SuQp/Schreibtisch/HC1 16-Bit/simulation/modelsim/HC1.vho          ;
+; /tmp/guest-E6SuQp/Schreibtisch/HC1 16-Bit/simulation/modelsim/HC1_fast.vho     ;
+; /tmp/guest-E6SuQp/Schreibtisch/HC1 16-Bit/simulation/modelsim/HC1_vhd.sdo      ;
+; /tmp/guest-E6SuQp/Schreibtisch/HC1 16-Bit/simulation/modelsim/HC1_vhd_fast.sdo ;
++--------------------------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit EDA Netlist Writer
-    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Wed Jan 17 16:09:14 2018
+Info: Running Quartus II 32-bit EDA Netlist Writer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Jan 24 16:07:38 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off HC1 -c HC1
-Info (204026): Generated files "HC1.vho", "HC1_fast.vho", "HC1_vhd.sdo" and "HC1_vhd_fast.sdo" in directory "D:/RA/HC1 16-Bit/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 471 megabytes
-    Info: Processing ended: Wed Jan 17 16:09:16 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+Info (204026): Generated files "HC1.vho", "HC1_fast.vho", "HC1_vhd.sdo" and "HC1_vhd_fast.sdo" in directory "/tmp/guest-E6SuQp/Schreibtisch/HC1 16-Bit/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 336 megabytes
+    Info: Processing ended: Wed Jan 24 16:07:41 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 

@@ -1,0 +1,22 @@
+Die Assembly-Instruktionen werden in Gruppen aufgeteilt:
+8bit:
+	IO	(Input/Output) (kein Paramerter) (IN, OUT)
+	J	(Jump) (Label als Parameter) (J, JZ, JPOS)
+	R	(Name an riscV R-Type angelehnt) (Zahl als Parameter (Dezimal)) (ADD, SUB, LOAD, STORE)
+	RR	(reduced R) (Memoryaddresse als Parameter (!= 0, 1)) (NAND)
+16bit:
+	IO	(Input/Output) (kein Paramerter) (IN, OUT)
+	J	(Jump) (Label als Parameter) (J, JZ, JPOS)
+	R	(Name an riscV R-Type angelehnt) (Zahl als Parameter (Dezimal)) (ADD, SUB, LOAD, STORE, NAND, DIV, MUL, ADDI, SUBI, MOD)
+
+Jede dieser Gruppen wird in je einer Klasse umgesetzt (Op_.../Op16_...),
+die alle das Interface Operation implementieren.
+
+Programmablauf:
+	Datei einlesen und in Zeilen aufteilen
+	Symbole/Labels aus Programm extrahieren (getSymbols(ref uint prog))
+		!Dabei werden die Labels und führenden Tabs(\t) aus den Programmzeilen entfernt
+		Die Programmzeilen haben nun also alle das Format MNEMONIC\t	Parameter[;Kommentar]
+	Die für den aktuellen Modus verfügbaren Operationen definiert (getOperations() / getOperations16());
+	Der eigentliche Assemblyprozess (ergebnis sind Maschieneninstuktion (mit führenden Nullen aufgefüllt (damit der Assembler von der Instuktionsgröße unabhängig ist)))
+	Ausgabe verschiedener Daten in mehrere Dateien (siehe README)

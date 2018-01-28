@@ -1,0 +1,61 @@
+ggt		= M(100)
+berechnung 	= M(101)
+gröZahl 	= M(102)
+zahl3 		= M(103)
+zahl2 		= M(104)
+zahl1 		= M(105)
+i		= M(106)
+
+
+ram(0) <= "0110" & "000000000000"; -- IN A zahl1			Hauptprogramm:
+ram(1) <= "0010" & "000001101001"; -- STORE in M(105) zahl1
+ram(2) <= "0110" & "000000000000"; -- IN A zahl2
+ram(3) <= "0010" & "000001101000"; -- STORE in M(104) zahl2
+ram(4) <= "1000" & "000000001000"; -- JPOS zu ram(8)
+ram(5) <= "0001" & "000001100100"; -- LOAD M(100) ggt
+ram(6) <= "0110" & "000000000001"; -- OUT A ggt
+ram(7) <= "1001" & "000000000000"; -- J zu ram(0)
+
+									
+				   --					Unterprogramm:
+ram(8) <= "0001" & "000001101000"; -- LOAD M(104) zahl2		   	zahl1 zur größeren zahl machen
+ram(9) <= "0100" & "000001101001"; -- SUB A - M(105) zahl1
+ram(10)<= "1000" & "000000010001"; -- JPOS zu ram(17) 			wenn zahl1 bereits größer als zahl2 ist
+ram(11)<= "0001" & "000001101001"; -- LOAD M(105) zahl1
+ram(12)<= "0010" & "000001100111"; -- STORE in M(103) zahl3
+ram(13)<= "0001" & "000001101000"; -- LOAD M(104) zahl2
+ram(14)<= "0010" & "000001101001"; -- STORE in M(105) zahl1
+ram(15)<= "0001" & "000001100111"; -- LOAD M(103) zahl3
+ram(16)<= "0010" & "000001101000"; -- STORE in M(104) zahl2
+
+ram(17)<= "0001" & "000001101001"; -- LOAD M(105) zahl1
+ram(18)<= "0010" & "000001100110"; -- STORE in M(102) gröZahl
+ram(19)<= "0001" & "000001101000"; -- LOAD M(105) zahl2
+ram(20)<= "0010" & "000001100100"; -- STORE in M(100) ggt
+
+ram(21)<= "1001" & "000001101010"; -- J zu ram(106)                   	for Schleife: i initialisieren
+ram(22)<= "0001" & "000001100110"; -- LOAD M(102) größZahl	
+ram(23)<= "0100" & "000001101010"; -- SUB A - M(106) i			gröZahl - i
+ram(24)<= "0111" & "000000100011"; -- JPZ zu ram(35)			falls 0  , springe zu ram(35)
+ram(25)<= "1000" & "000000100011"; -- JPOS zu ram(35)			falls gröZahl - i > 0, springe zu ram(35)
+ram(26)<= "1001" & "000000000101"; -- J zu ram(5)  return von ggt
+
+ram(35)<= "0001" & "000001101001"; -- LOAD M(105) zahl1			GGT Algorithmus
+ram(36)<= "1110" & "000001101000"; -- A MOD M(104) zahl2
+ram(37)<= "0010" & "000001100101"; -- STORE in M(101) berechnung
+ram(38)<= "0001" & "000001100101"; -- LOAD M(101) berechnung
+ram(39)<= "0111" & "000000000101"; -- JPZ zu ram(5) return von ggt	falls berechnung = 0, springe zu ram(5)
+ram(40)<= "0010" & "000001100100"; -- STORE in M(100) ggt
+ram(41)<= "0001" & "000001101000"; -- LOAD M(104) zahl2
+ram(42)<= "0010" & "000001101001"; -- STORE in M(105) zahl1
+ram(43)<= "0001" & "000001100101"; -- LOAD M(101) berechnung
+ram(44)<= "0010" & "000001101000"; -- STORE in M(104) zahl2
+ram(45)<= "0001" & "000001101010"; -- LOAD M(106) i			i um 1 erhöhen
+ram(46)<= "1100" & "000000000001"; -- ADDI A + 1
+ram(47)<= "0010" & "000001101010"; -- STORE in M(106) i
+ram(48)<= "1001" & "000000010110"; -- J zu ram(22)
+
+
+
+ram(106)<= "0000000000000000"; 	    -- M(106) <= 0
+ram(107)<= "1001" & "000000010110"; -- J zu ram(22)

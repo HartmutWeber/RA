@@ -1,0 +1,56 @@
+// ggt_c_code.cpp : Definiert den Einstiegspunkt für die Konsolenanwendung.
+//
+
+#include "stdafx.h"
+
+
+int ggtrech(int _zahl1,int _zahl2){
+
+			int zahl1 = _zahl1;
+            int zahl2 = _zahl2;
+            int zahl3;
+     
+            if (zahl1 < zahl2) // Zahl1 zu größeren Zahl machen
+            { 
+                zahl3 = zahl1; 
+                zahl1 = zahl2; 
+                zahl2 = zahl3;
+            }
+
+            int gröZahl = zahl1;
+            int berechnung;
+            int ggt = zahl2;
+
+            for (int i = 0 ; i <= gröZahl; i++) // Euklidischer Algorithmus
+             { 
+                berechnung = zahl1 % zahl2; 
+                if (berechnung == 0) 
+                {
+                    return ggt;
+                } 
+                ggt = berechnung; // Algoritmus 
+                zahl1 = zahl2; 
+                zahl2 = berechnung;
+                
+            }
+
+            return ggt;
+}
+	
+int _tmain(int argc, _TCHAR* argv[])
+{
+	printf("Geben sie 2 Zahlen ein, deren groessten gemeinsammen Teiler sie wissen moechten"); // Eingabe der Variabelen
+	printf("\nZahl1: ");
+	int ErsteZahl = 0; 
+	scanf_s("%i", &ErsteZahl);
+	printf("\nZahl2: ");
+	int ZweiteZahl = 0; 
+	scanf_s("%i", &ZweiteZahl);
+
+	int ggtzahl= ggtrech(ErsteZahl, ZweiteZahl); // aufruf der ggt methode
+	
+	printf("\nDer groesste gemeinsamme Teiler ist %i", ggtzahl); // ausgabe
+	scanf_s("\n%i" , &ErsteZahl);  // auffang damit sich das programm nicht selbstständig schließt
+	return 0;
+}
+

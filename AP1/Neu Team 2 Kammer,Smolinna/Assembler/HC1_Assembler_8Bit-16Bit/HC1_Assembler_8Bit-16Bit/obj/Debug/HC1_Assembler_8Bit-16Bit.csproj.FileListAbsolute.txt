@@ -1,0 +1,6 @@
+C:\Users\Tim\Documents\Visual Studio 2017\Projects\HC1_Assembler_8Bit-16Bit\HC1_Assembler_8Bit-16Bit\bin\Debug\HC1_Assembler_8Bit-16Bit.exe.config
+C:\Users\Tim\Documents\Visual Studio 2017\Projects\HC1_Assembler_8Bit-16Bit\HC1_Assembler_8Bit-16Bit\bin\Debug\HC1_Assembler_8Bit-16Bit.exe
+C:\Users\Tim\Documents\Visual Studio 2017\Projects\HC1_Assembler_8Bit-16Bit\HC1_Assembler_8Bit-16Bit\bin\Debug\HC1_Assembler_8Bit-16Bit.pdb
+C:\Users\Tim\Documents\Visual Studio 2017\Projects\HC1_Assembler_8Bit-16Bit\HC1_Assembler_8Bit-16Bit\obj\Debug\HC1_Assembler_8Bit-16Bit.csprojResolveAssemblyReference.cache
+C:\Users\Tim\Documents\Visual Studio 2017\Projects\HC1_Assembler_8Bit-16Bit\HC1_Assembler_8Bit-16Bit\obj\Debug\HC1_Assembler_8Bit-16Bit.exe
+C:\Users\Tim\Documents\Visual Studio 2017\Projects\HC1_Assembler_8Bit-16Bit\HC1_Assembler_8Bit-16Bit\obj\Debug\HC1_Assembler_8Bit-16Bit.pdb
